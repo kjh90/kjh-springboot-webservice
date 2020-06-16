@@ -26,5 +26,17 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
+    //spring-data-jpa, com.h2database:h2 의존성 등록
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('com.h2database:h2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+    //스프링 시큐리티
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    //spring-session-jdbc
+    compile('org.springframework.session:spring-session-jdbc')
+    //스프링 시큐리티 테스트
+    compile('org.springframework.security:spring-security-test')
 }
